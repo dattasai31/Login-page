@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/util.css">
+</head>
+
+<body>
+	<div class="limiter">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="card">
+						<div class="card-body">
+							<form class="form-validation register-form" method="post" role="form">
+								<h2 class="text-center">Reset Password</h2>
+
+								<div class="alert alert-success alert-dismissible" style="border-radius: 25px;" role="alert">
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									Email sent<span> </span>
+								</div>
+
+								<div class="mb-3">
+									<input class="form-control" type="text" name="code" id="code" placeholder="Reset Code" required>
+								</div>
+
+								<div class="mb-3 text-center">
+									<button class="btn btn-primary" type="submit" name="code-submit" id="recover-submit">Submit</button>
+								</div>
+
+								<input type="hidden" class="hide" name="token" id="token" value="">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS (Optional) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-d2HryiCPDgn5Xpl4UWigjAyDzF1J8aURmJCJ94pFXJ6uFt7F93vIaxqWx2RRqzg" crossorigin="anonymous"></script>
+</body>
+
+</html>

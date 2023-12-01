@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/util.css">
+</head>
+
+<body>
+	<div class="limiter">
+
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="https://i.pinimg.com/564x/45/ae/5c/45ae5c17d2c5d69e1d898f90d9859bbc.jpg" alt="IMG">
+				</div>
+
+				<form class="login100-form validate-form" method="post" role="form">
+					<span class="login100-form-title">
+						Recover Password
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate='<?php validate_user_login(); ?>'>
+						<input class="input100" type="text" id="email" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+
+
+					<div class="container-login100-form-btn">
+						<input class="login100-form-btn" type="submit" value="Recover" name="recover-submit"
+							id="recover-submit">
+
+						</input>
+					</div>
+
+
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="register.php">
+							Create your Account
+							<i class="fas fa-long-arrow-alt-right"></i>
+						</a>
+					</div>
+					<input type="hidden" class="hide" name="token" id="token" value="<?php echo token_generator(); ?>">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
